@@ -1,0 +1,60 @@
+* {
+  margin: 0%;
+  padding: 0px;
+}
+
+.isi table tr td input,
+select {
+  margin-left: 30px;
+  width: 250px;
+  /* background-color: red; */
+  float: right;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: smaller;
+  height: 25px;
+}
+
+.isi table tr td input {
+  background-color: rgba(197, 197, 188, 0.61);
+  border: none;
+}
+
+.isi table tr td {
+  margin-right: 30px;
+  /* background-color: khaki; */
+}
+
+.spasi {
+  color: white;
+}
+
+.tengah {
+  padding-left: 120px;
+}
+.abu {
+  background-color: rgba(197, 197, 188, 0.41);
+  height: 35px;
+}
+
+.abu h4 {
+  font-size: medium;
+  padding-top: 5px;
+}
+
+.logo {
+  text-align: center;
+}
+.warnalatar,
+.xx {
+  background-color: #ff6600;
+}
+
+.hitam {
+  color: black;
+}
+
+.sb-nav-link-icon,
+.nav-link:hover {
+  color: #ff6600;
+}

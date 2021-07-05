@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bank Mega Syariah</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="sb-nav-fixed">
+    <!-- ==================================Nav Atas======================================= -->
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-light">
+      <!-- Navbar Brand-->
+      <a class="navbar-brand ps-5 mt-2" href="home.html"><img src="./foto/Bank Mega Syariah.png" style="height: 50px" alt="" /></a>
+      <!-- Sidebar Toggle-->
+      <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 hitam" id="sidebarToggle" href="#!"><i class="fas fa-bars fa-lg text-dark"></i></button>
+      <!-- Navbar Search-->
+      <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+          <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <!-- Navbar-->
+      <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#!">Settings</a></li>
+            <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#!">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- ==================================Nav Samping======================================= -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              <a class="nav-link" href="home.html">
+                <div class="sb-nav-link-icon"><i class="fas fa-chart-bar"></i></div>
+                Dashboard
+              </a>
+              <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                <div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
+                Marketing
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+              </a>
+              <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                  <a class="nav-link" href="input_aplikasi.html">Input Aplikasi Baru</a>
+                  <a class="nav-link" href="cek_dokumen.html">Cek Dokumen</a>
+                </nav>
+              </div>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                Proses Pembiayaan
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><i class="fas fa-hands-helping"></i></div>
+                Partner
+              </a>
+              <a class="nav-link" href="#">
+                <div class="sb-nav-link-icon"><i class="fas fa-coins"></i></div>
+                Fasilitas
+              </a>
+              <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                <div class="sb-nav-link-icon"><i class="fas fa-sign-in-alt"></i></div>
+                Login
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+              </a>
+              <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                  <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                    Authentication
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                  </a>
+                  <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                    <nav class="sb-sidenav-menu-nested nav">
+                      <a class="nav-link" href="index.html">Login</a>
+                      <a class="nav-link" href="register.html">Register</a>
+                      <a class="nav-link" href="password.html">Forgot Password</a>
+                    </nav>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="sb-sidenav-footer">
+            <div class="small">Logged in as:</div>
+            Ahmad
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <!-- <div class="container-fluid px-4">
+                        <h1 class="mt-4">Sidenav Light</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Sidenav Light</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                This page is an example of using the light side navigation option. By appending the
+                                <code>.sb-sidenav-light</code>
+                                class to the
+                                <code>.sb-sidenav</code>
+                                class, the side navigation will take on a light color scheme. The
+                                <code>.sb-sidenav-dark</code>
+                                is also available for a darker option.
+                            </div>
+                        </div>
+                    </div> -->
+          <!--=========================Sumary Ideb=============================== -->
+
+          <div class="summary_ideb">
+            <div class="judul abu mt-3">
+              <h4>Summarry & DHH Checking Nasabah</h4>
+            </div>
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Total angsuran eksisting (iDeb)</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Kualitas pembiayaan terburuk</td>
+                  <td>:<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Jumlah fasilitas dengan kualitas buruk <span class="spasi">---</span></td>
+                  <td>:<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Status (OJK SLIK)</td>
+                  <td>:<input type="teks" value="OKAY" /></td>
+                  <td>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgvlVc7WD-mquuRqf0OKTbNhbVFQjFb7KUurnQNgJcq5mOfzEnuyCkhr6vJwPGJg/pubhtml" target="_blank"><button type="button" class="btn btn-primary ms-5">Detail Ideb dan DHN</button></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Status (DHN)</td>
+                  <td>:<input type="text" value="OKAY" /></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!--=========================Emergency Contact=============================== -->
+
+          <div class="emergency">
+            <div class="judul abu mt-5">
+              <h4>Emergency Contact</h4>
+            </div>
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Nama Lengkap</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat Tinggal Saat Ini</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Kota</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Kode Pos</td>
+                  <td>:<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Hubungan dengan Nasabah<span class="spasi">---------------</span></td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Nomor Telepon</td>
+                  <td>:<input type="number" /></td>
+                  <td class="tengah pe-3">Kode Area</td>
+                  <td>:<input type="number" /></td>
+                </tr>
+
+                <tr>
+                  <td>Nomor Handphone 1</td>
+                  <td>:<input type="number" /></td>
+                  <td class="tengah me-3">Operator</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!--=========================Data Pekerjaan Nasabah=============================== -->
+
+          <div class="pekerjaan">
+            <div class="judul abu mt-5">
+              <h4>Data Pekerjaan Nasabah</h4>
+            </div>
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Jenis Pekerjaan Saat ini</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Nama Perusahaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Mulai Bekerja</td>
+                  <td>:<input type="date" /></td>
+                </tr>
+                <tr>
+                  <td>Jenis Usaha</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat Perusahaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Kota</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Nomor Telepon Perusahaan <span class="spasi">---------------</span></td>
+                  <td>:<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Jabatan pekerjaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Total Pengalam Bekerja</td>
+                  <td>:<input type="number" value="tahun" /></td>
+                  <td>Tahun</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!--=========================Data Pekerjaan Pasangan=============================== -->
+          <div class="pekerjaan_pasangan">
+            <div class="judul abu mt-5">
+              <h4>Data Pekerjaan Pasangan</h4>
+            </div>
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Jenis Pekerjaan Saat ini</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Nama Perusahaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Mulai Bekerja</td>
+                  <td>:<input type="date" /></td>
+                </tr>
+                <tr>
+                  <td>Jenis Usaha</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat Perusahaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Kota</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Nomor Telepon Perusahaan<span class="spasi">----------------</span></td>
+                  <td>:<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Jabatan pekerjaan</td>
+                  <td>:<input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Total Pengalam Bekerja</td>
+                  <td>:<input type="number" value="tahun" /></td>
+                  <td>Tahun</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!--=========================Data Penghasilan=============================== -->
+          <div class="data_penghasilan">
+            <div class="judul abu mt-5">
+              <h4>Data Penghasilan</h4>
+            </div>
+
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Penghasilan Pemohon</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Penghasilan suami/istri</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Penghasilan tambahan</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Biaya Rumah Tangga/Bulan<span class="spasi">-----------------</span></td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!--=========================Pembiayaan=============================== -->
+          <div class="pembiayaan">
+            <div class="judul abu mt-5">
+              <h4>Pembiayaan</h4>
+            </div>
+
+            <div class="isi">
+              <table>
+                <tr>
+                  <td>Harga Transaksi</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>FTV</td>
+                  <td>: %<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Nilai Jaminan</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Self Financing</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Plafond Pembiayaan</td>
+                  <td>: Rp<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>Jangka Waktu Pembiayaan<span class="spasi">------------------</span></td>
+                  <td>: Bulan<input type="number" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTp1fLBJ6JCYO8IfIJPsxudT2vVbVEmnwo9xa6-T_Pb37XTEd6PESwjWcy6XuglDDNaLzRPbFF8q3pq/pubhtml" target="_blank"><button type="button" class="btn btn-primary mt-2 mb-2">Detail DSR Calculation</button></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Status DSR</td>
+                  <td>: DSR OK</td>
+                </tr>
+                <tr>
+                  <td>Hasil Skor Awal</td>
+                  <td>: 514</td>
+                </tr>
+                <tr>
+                  <td>Rekomendasi</td>
+                  <td>: Pass</td>
+                </tr>
+                <tr>
+                  <td>Skoring Eksternal</td>
+                  <td>:</td>
+                </tr>
+                <tr>
+                  <td>Rekomendasi</td>
+                  <td>:</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+          <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+              <div class="text-muted">Copyright &copy; Your Website 2021</div>
+              <div>
+                <a href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
